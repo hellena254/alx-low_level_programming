@@ -5,7 +5,7 @@
  *
  * Description - print a statement
  *
- * Return Standard error (1)
+ * Return: 1 (error)
  */
 
 int main(void)
