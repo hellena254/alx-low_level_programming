@@ -10,6 +10,7 @@
 
 int main(void)
 {
-	fputs("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", stdout);
+	char words[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
+	write(2, words, 59);
 	return (1);
 }
