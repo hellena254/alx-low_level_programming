@@ -10,10 +10,19 @@
 
 int main(void)
 {
-	printf("Size of a char: %zu byte(s)\n", sizeof(char));
-	printf("Size of an int: %zu byte(s)\n", sizeof(int));
-	printf("Size of a long int: %zu byte(s)\n", sizeof(long int));
-	printf("Size of a long long int: %zu byte(s)\n", sizeof(long long int));
-	printf("Size of a float: %zu byte(s)", sizeof(float));
+	/* Use sizeof to determine size */
+	int size_of_char = sizeof(char);
+	int size_of_int = sizeof(int);
+	int size_of_long_int = sizeof(long int);
+	int size_of_long_long_int = sizeof(long long int);
+	int size_of_float = sizeof(float);
+
+	/* Print the sizes */
+	printf("Sizes of a char: %d byte(s)\n", size_of_char);
+	printf("Sizes of an int: %d byte(s)\n", size_of_int);
+	printf("Sizes of a long int: %d byte(s)\n", size_of_long_int);
+	printf("Sizes of a long long int: %d byte(s)\n", size_of_long_long_int);
+	printf("Sizes of a float: %d byte(s)\n", size_of_float);
+
 	return (0);
 }
