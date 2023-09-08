@@ -70,7 +70,6 @@ Before diving into this project, it's recommended to have a good understanding o
 If you have any questions or need assistance with this project, feel free to contact me:
 
 - Email: [Hellena](hellena243@gmail.com)
-- GitHub: [hellena254](https://github.com/hellena254/)
 
 Happy Learning ):
 
