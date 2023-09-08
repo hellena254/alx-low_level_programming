@@ -12,7 +12,7 @@ int main(void)
 {
 	char reverse_letters = 'z';
 
-	while (reverse_letters <= 'a')
+	while (reverse_letters >= 'a')
 	{
 		putchar(reverse_letters);
 		reverse_letters--;
