@@ -15,7 +15,7 @@ int main(void)
 	while (reverse_letters <= 'a')
 	{
 		putchar(reverse_letters);
-		reverse_letters++;
+		reverse_letters--;
 	}
 	putchar('\n');
 	return (0);
