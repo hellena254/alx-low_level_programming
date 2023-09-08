@@ -14,7 +14,7 @@ Before diving into this project, it's recommended to have a good understanding o
 
 1. Clone the repository to your local machine:
    ```bash
-   git clone <repository_url>
+   git clone https://github.com/hellena254/alx-low_level_programming.git
 2. Navigate to the project directory:
     ```bash
     cd 0x00-hello_world
@@ -69,6 +69,8 @@ Before diving into this project, it's recommended to have a good understanding o
 
 If you have any questions or need assistance with this project, feel free to contact me:
 
-Email: <
-GitHub: Your GitHub Profile
+Email: [Hellena](hellena243@gmail.com)
+GitHub: [hellena254](https://github.com/hellena254/)
+
+Happy Learning. ):
 
