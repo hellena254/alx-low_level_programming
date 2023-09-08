@@ -15,8 +15,10 @@ int main(void)
 	/* loop through the lowercase alphabets */
 	while (alphabet <= 'z')
 	{
-		printf("%c\n", alphabet);
+		putchar(alphabet);
 		alphabet++;
 	}
+	putchar('\n');
+
 	return (0);
 }
