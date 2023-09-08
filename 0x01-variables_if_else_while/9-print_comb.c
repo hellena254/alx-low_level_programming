@@ -20,7 +20,7 @@ int main(void)
 			putchar('0' + digit);
 			putchar(',');
 			putchar(' ');
-		} else
+		} else if (digit == 9)
 		{
 			putchar('\n');
 		}
