@@ -13,7 +13,7 @@ int main(void)
 	int digit1, digit2;
 
 	/* Iterate the first digit */
-	for (digit1 = 0; digit1 <= 9; digit1++)
+	for (digit1 = 0; digit1 <= 8; digit1++)
 	{
 		/* iterate through the second digit */
 		for (digit2 = 0; digit2 <= 9; digit2++)
@@ -25,7 +25,7 @@ int main(void)
 			if (digit1 != 8 || digit2 != 9)
 			{
 				putchar(',');
-				putchar(',');
+				putchar(' ');
 			}
 		}
 	}
