@@ -15,6 +15,7 @@ int main(void)
 	/* Loop to iterate through the first two-digit */
 	for (num1 = 0; num1 <= 99; num1++)
 	{
+		/* loop to iiterate the sec digit*/
 		for (num2 = 0; num2 <= 99; num2++)
 		{
 			putchar('0' + num1 / 10);
