@@ -25,13 +25,13 @@ int main(void)
 				putchar(' ');
 				putchar('0' + num2 / 10);
 				putchar('0' + num2 % 10);
-			}
 
-			/* Check if its not the last combination */
-			if (num1 != 98 || num2 != 99)
-			{
-				putchar(',');
-				putchar(' ');
+				/*Check if it's not the last combination */
+				if (num1 != 98 || num2 != 99)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	}
