@@ -12,14 +12,14 @@ int main(void)
 {
 	int digit1, digit2, digit3;
 
-	/* Loop through the first digit*/
+	/* Loop through the first digit (0 to 7) */
 	for (digit1 = 0; digit1 <= 7; digit1++)
 	{
-		/* Loop through the second digit*/
-		for (digit2 = 0; digit2 <= 8; digit2++)
+		/* Loop through the second digit(1 to 8)*/
+		for (digit2 = digit1 + 1; digit2 <= 8; digit2++)
 		{
-			/* loop through the third digit*/
-			for (digit3 = 0; digit3 <= 9; digit3++)
+			/* loop through the third digit(2 to 9)*/
+			for (digit3 = digit2 + 1; digit3 <= 9; digit3++)
 			{
 				putchar('0' + digit1);
 				putchar('0' + digit2);
@@ -34,6 +34,5 @@ int main(void)
 		}
 	}
 	putchar('\n');
-
 	return (0);
 }
