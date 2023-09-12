@@ -15,19 +15,15 @@ void times_table(void)
 		for (j = 0; j <= 9; j++)
 		{
 			result = i * j;
-			/* print the tens digit*/
-			putchar((result + '0'));
-			/* print the ones digit*/
-			putchar((result % 10) + '0');
-
-			if (j == 9)
+			if (j <= 9)
 			{
-				putchar('\n');
+				putchar(' ');
 			} else
 			{
-				putchar(',');
-				putchar(' ');
+				putchar((result / 10) + '0');
 			}
+			putchar((result % 10) + 10);
 		}
+		putchar('\n');
 	}
 }
