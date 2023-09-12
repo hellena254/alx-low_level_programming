@@ -30,4 +30,6 @@ int print_sign(int n)
 		write(1, &minus, 1);
 		return (-1);
 	}
+
+	return (2);
 }
