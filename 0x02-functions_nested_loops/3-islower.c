@@ -2,9 +2,9 @@
 
 /**
  *_islower()- checks for lowercase characters using islower()
- *		and return 1 if lower and 0 if its not
+ *		and return 1 if lower and 0 if its not.
  *
- * @c- parameter we are passing in the function
+ *@c: parameter we are passing in the function
  *
  * Return: 1 if char is lowercase and 0 if its not
  */
