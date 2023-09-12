@@ -16,16 +16,16 @@ void times_table(void)
 		{
 			result = i * j;
 			/* print the tens digit*/
-			putchar((result / 10) + '0');
+			putchar((result + '0');
 			/* print the ones digit*/
-			putchar((result % 10) + '0');
+			/*putchar((result % 10) + '0');*/
 
 			if (j == 9)
 			{
 				putchar('\n');
 			} else
 			{
-				putchar('.');
+				putchar(',');
 				putchar(' ');
 			}
 		}
