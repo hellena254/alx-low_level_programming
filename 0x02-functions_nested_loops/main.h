@@ -1,8 +1,6 @@
-#include <stdio.h>
-#include <unistd.h>
-
-/*
-  * function: _putchar declared
-  */
+#ifndef MAIN_H
+#define MAIN_H
 
 int _putchar(char c);
+
+#endif /* MAIN_H */
