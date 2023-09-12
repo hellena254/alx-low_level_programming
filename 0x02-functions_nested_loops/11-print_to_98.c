@@ -12,14 +12,26 @@ void print_to_98(int n)
 {
 	int m;
 
-	for (m = n; m <= 98; m++)
+	if (n <= 98)
 	{
-		putchar(m + '0');
-
-		while (m != 98)
+		for (m = n; m <= 98; m++)
 		{
-			putchar(',');
-			putchar(' ');
+			printf("%d", m);
+			if (m < 98)
+			{
+				printf(", ");
+			}
+		}
+	} else
+	{
+		for (m = n; m >= 98; m++)
+		{
+			printf("%d", m);
+			if (m > 98)
+			{
+				printf(", ");
+			}
 		}
 	}
+	printf("\n");
 }
