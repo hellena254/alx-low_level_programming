@@ -19,7 +19,7 @@ void print_times_table(int n)
 	{
 		for (j = 0; j <= n; j++)
 		{
-			int result = i * j;
+			result = i * j;
 			/* print thousands and hundreds digit*/
 			if (result >= 1000)
 				putchar((result / 1000) + '0');
