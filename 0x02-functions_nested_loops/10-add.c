@@ -1,10 +1,9 @@
 #include "main.h"
 
 /**
- * add() - adds two integers and print result
- *
- *@i,@j- paramters passed through the function
- *
+ * add()- adds two integers and print result
+ * @i: first integer
+ * @j: second integer
  * Return: Always 0
  */
 
