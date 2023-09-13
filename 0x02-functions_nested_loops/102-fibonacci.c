@@ -26,7 +26,7 @@ int main(void)
 	{
 		printf("%ld", fib[i]);
 
-		if ((i < n) - 1)
+		if (i < (n - 1))
 			printf(", ");
 	}
 	printf("\n");
