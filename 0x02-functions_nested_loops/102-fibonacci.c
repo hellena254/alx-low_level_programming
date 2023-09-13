@@ -11,7 +11,7 @@
 int main(void)
 {
 	int i, n = 50;
-	long long int fib[n];
+	long fib[50];
 
 	/* initialize the first two fib numbers*/
 	fib[0] = 1;
@@ -24,7 +24,7 @@ int main(void)
 	/* print the fibonacci numbers separated by commas*/
 	for (i = 0; i < n; i++)
 	{
-		printf("%lld", fib[i]);
+		printf("%ld", fib[i]);
 
 		if ((i < n) - 1)
 			printf(", ");
