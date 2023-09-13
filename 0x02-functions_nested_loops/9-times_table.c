@@ -2,7 +2,7 @@
 #include <unistd.h>
 
 /**
- * times_table: prints the 9 times table
+ * times_table()-prints the 9 times table
  *
  */
 
@@ -19,7 +19,7 @@ void times_table(void)
 			if (result >= 10)
 				putchar((result / 10) + '0');
 			else
-				putchar(' ');
+				putchar(',');
 
 			putchar((result % 10) + '0');
 
