@@ -12,14 +12,13 @@ void more_numbers(void)
 	while (i < 10)
 	{
 		j = 0;
-		while (j <= 14)
+		while (j < 14)
 		{
 			if (j > 9)
 				/*print the tens digit*/
-				_putchar('0' + j / 10);
-			else
-				/*print the ones digit*/
-				_putchar('0' + j % 10);
+				_putchar(j / 10 + '0');
+			/*print the ones digit*/
+			_putchar(j % 10 + '0');
 			j++;
 		}
 		i++;
