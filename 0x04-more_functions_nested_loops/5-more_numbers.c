@@ -19,6 +19,6 @@ void more_numbers(void)
 				/*print the ones digit*/
 				_putchar('0' + j % 10);
 		}
-		_putchar('\n');
+		_putchar(10);
 	}
 }
