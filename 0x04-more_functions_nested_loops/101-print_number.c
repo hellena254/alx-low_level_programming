@@ -7,15 +7,37 @@
 
 void print_number(int n)
 {
+	int i;
+	long j, number;
+
+	number = n;
 	if (n < 0)
 	{
 		_putchar('-');
 		n = -n;
 	}
 
-	/*Recursively print the digits before the last one*/
-	if (n / 10 != 0)
-		print_number(n / 10);
+	i = 1;
+	j = 1;
+	while (i)
+	{
+		if (number / (j * 10) > 0)
+			j *= 10;
+		else
+			i = 0;
+	}
 
-	print_digit(n % 10);
+	while (number >= 0)
+	{
+		if (j == 1)
+		{
+			_putchar(number % 10 + '0');
+			number = -1;
+		}
+		else
+		{
+			_putchar((number / j % 10) + '0');
+			j /= 10;
+		}
+	}
 }
