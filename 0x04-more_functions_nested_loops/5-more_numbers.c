@@ -6,22 +6,22 @@
 
 void more_numbers(void)
 {
-	int i, j;
+	int i, j, k;
 
-	i = 0;
-	while (i < 10)
+	for (i = 1; i <= 10; ++i)
 	{
-		j = 0;
-		while (j < 14)
+		for (j = 0; j <= 14; ++j)
 		{
+			k = j;
 			if (j > 9)
+			{
 				/*print the tens digit*/
-				_putchar(j / 10 + '0');
+				_putchar(1 + 48);
+				k = j % 10;
+			}
 			/*print the ones digit*/
-			_putchar(j % 10 + '0');
-			j++;
+			_putchar(k + 48);
 		}
-		i++;
 		_putchar('\n');
 	}
 }
