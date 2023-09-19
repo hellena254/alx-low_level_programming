@@ -14,9 +14,8 @@ int main(void)
 	int i, j;
 
 	srand(time(NULL));
-	i = 0;
 
-	for (j = 2772; j > 122; j++)
+	for (i = 0, j = 2772; j > 122; i++)
 	{
 		randNum = (rand() % 125) + 1;
 		printf("%c", randNum);
@@ -26,3 +25,4 @@ int main(void)
 	printf("%c", j);
 
 	return (0);
+}
