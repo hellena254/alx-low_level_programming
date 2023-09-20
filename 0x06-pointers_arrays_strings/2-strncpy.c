@@ -5,7 +5,7 @@
  * @dest: pointer to a char
  * @src: pointer ro a char
  * @n: pointer to an integer
- * Return: pointer to copied strings
+ * Return: pointer to copied char
  */
 
 char *_strncpy(char *dest, char *src, int n)
