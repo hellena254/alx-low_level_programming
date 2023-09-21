@@ -7,17 +7,38 @@
 
 void print_number(int n)
 {
-	if (n == 0)
-	{
-		_putchar('0');
-		return;
-	}
+	int negative, limit;
+
+	negative = 0;
+	limit = 1;
 	if (n < 0)
 	{
 		_putchar('-');
-		n = -n;
+		negative = -1;
 	}
-	if (n / 10 != 0)
-		print_number(n / 10);
-	_putchar((n % 10) + '0');
+	while (n > 9 || n < -9)
+	{
+		limit *= 10;
+		n /= 10;
+	}
+
+	while (n > 0)
+	{
+		if (n > 9)
+		{
+			if (!negative)
+				_putchar((n / limit % 10) + '0');
+			else
+				_putchar((n / limit % 10) * -1 + '0');
+			limit /= 10;
+		}
+		if (limit == 1)
+		{
+			if (negative)
+				_putchar((n % 10) * -1 + '0');
+			else
+				_putchar(n % 10 + '0');
+			limit = 0;
+		}
+	}
 }
