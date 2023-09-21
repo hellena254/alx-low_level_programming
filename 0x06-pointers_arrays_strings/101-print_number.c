@@ -7,24 +7,25 @@
 
 void print_number(int n)
 {
-	int negative, limit;
+	int negative, limit, store;
 
 	negative = 0;
 	limit = 1;
+	store = n;
 	if (n < 0)
 	{
 		_putchar('-');
 		negative = -1;
 	}
-	while (n > 9 || n < -9)
+	while (store > 9 || store < -9)
 	{
 		limit *= 10;
-		n /= 10;
+		store /= 10;
 	}
 
-	while (n > 0)
+	while (limit > 0)
 	{
-		if (n > 9)
+		if (limit > 9)
 		{
 			if (!negative)
 				_putchar((n / limit % 10) + '0');
