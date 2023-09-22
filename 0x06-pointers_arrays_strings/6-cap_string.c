@@ -8,33 +8,28 @@
 
 char *cap_string(char *s)
 {
-	int i, j;
-	int nextChar;
-	char separator[] = ",;.!?\"(){}\n\t";
+	int i = 0;
+	int j;
+	int separator[] = {9, 10, 32, 33, 34, 40, 41, 44, 46, 59, 63, 123, 125};
 
-	for (i = 0, nextChar = 0; s[i] != '\0'; i++)
+	while (*(s + i) != '\0')
 	{
-		if (s[0] > 96 && s[0] < 123)
-			nextChar = 1;
-		for (j = 0; separator[j] != '\0'; j++)
+		if (*(s + i) >= 96 && *(s + i) <= 123)
 		{
-			if (separator[j] == s[i])
-				nextChar = 1;
+			if (i == 0)
+			{
+				*(s + i) = *(s + i) - 32;
+			}
+			else
+			{
+				for (j = 0; j <= 12; j++)
+				{
+					if (separator[j] == *(s + i - 1))
+						*(s + i) = *(s + i) - 32;
+				}
+			}
 		}
-
-	if (nextChar)
-	{
-		if (s[i] > 96 && s[i] < 123)
-		{
-			s[i] -= 32;
-			nextChar = 0;
-		}
-		else if (s[i] > 64 && s[i] < 91)
-			nextChar = 0;
-		else if (s[i] > 47 && s[i] < 58)
-			nextChar = 0;
+		i++;
 	}
-	}
-
 	return (s);
 }
