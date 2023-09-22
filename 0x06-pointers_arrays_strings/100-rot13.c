@@ -8,17 +8,22 @@
 
 char *rot13(char *str)
 {
-	int i;
-	char caps[] = "NOPQRSTUVWXYZABCDEFGHIJKLM";
-	char lower[] = "nopqrstuvwxyzabcdefghijklm";
+	int i = 0;
+	int j;
+	char init[] = "ABCDEFGHIJKLMNQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char new[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
-	for (i = 0; str[i] != '\0'; i++)
+	while (*(str + i) != '\0')
 	{
-		if ((str[i] > 64 && str[i] < 91) || (str[i] > 96 && str[i] < 123))
+		for (j = 0; j <= 51; j++)
 		{
-			str[i] = (str[i] - 65 > 25) ?
-				caps[str[i] - 97] : lower[str[i] - 65];
+			if (*(str + i) == init[j])
+			{
+				*(str + i) = new[j];
+				break;
+			}
 		}
+		i++;
 	}
 	return (str);
 }
