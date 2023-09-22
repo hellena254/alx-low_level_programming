@@ -8,8 +8,7 @@
 
 void reverse_array(int *a, int n)
 {
-	char temp;
-	int i, j;
+	int i, j, temp;
 
 	i = 0;
 	j = n - 1;
@@ -17,9 +16,9 @@ void reverse_array(int *a, int n)
 	while (i < j)
 	{
 		/* swap the digits*/
-		temp = a[i];
-		a[i] = a[j];
-		a[j] = temp;
+		temp = *(a + i);
+		*(a + i) = *(a + j);
+		*(a + j) = temp;
 
 		/* move i and j toward each other */
 		i++;
