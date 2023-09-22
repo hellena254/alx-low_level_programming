@@ -7,41 +7,44 @@
 
 void print_number(int n)
 {
-	int limit;
-	int negative;
-	int store;
+	int i, j, num, nums, pow;
+	unsigned int temp, number, newNum;
 
-	negative = 0;
-	limit = 1;
-	store = n;
+	num = 0;
 
 	if (n < 0)
 	{
 		_putchar('-');
-		negative = 1;
+		temp = -n;
 	}
-	while (store > 9 || store < -9)
+	else
 	{
-		limit *= 10;
-		store /= 10;
+		temp = n;
 	}
-	while (limit > 0)
+
+	newNum = temp;
+
+	while (newNum >= 10)
 	{
-		if (limit > 9)
-		{
-			if (!negative)
-				_putchar((n / limit % 10) + '0');
-			else
-				_putchar((n / limit % 10) * -1 + '0');
-			limit /= 10;
-		}
-		if (limit == 1)
-		{
-			if (negative)
-				_putchar((n % 10) * -1 + '0');
-			else
-				_putchar(n % 10 + '0');
-			limit = 0;
-		}
+		newNum = newNum / 10;
+		num++;
+	}
+
+	nums = num + 1;
+	pow = 1;
+	i = 1;
+
+	while (i < nums)
+	{
+		pow = pow * 10;
+		i++;
+	}
+
+	j = pow;
+	while (j >= 1)
+	{
+		number = (temp / j) % 10;
+		_putchar(number + '0');
+		j = j / 10;
 	}
 }
