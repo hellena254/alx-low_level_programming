@@ -20,7 +20,7 @@ void print_diagsums(int *a, int size)
 		i++;
 	}
 	printf("%d, ", sum);
-	
+
 	i = 0;
 	sum = 0;
 	while (i < square)
