@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 #include <math.h>
+#include <string.h>
 
 void _puts_recursion(char *s);
 void _print_rev_recursion(char *s);
@@ -14,4 +15,7 @@ int _sqrt_recursion(int n);
 int sqrt_recursion(int n, int j);
 int is_prime_number(int n);
 int is_divisible(int n, int j);
+int is_palindrome(char *s);
+int is_palindrome_recursive(char *s, int start, int end);
+
 #endif /*MAIN_H*/
