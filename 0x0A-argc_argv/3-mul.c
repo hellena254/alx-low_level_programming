@@ -13,7 +13,9 @@
 
 int main(int argc, char *argv[])
 {
-	if (argc > 1)
+	(void) argc;
+
+	if (argv[1] && argv[2])
 	{
 		printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
 	}
