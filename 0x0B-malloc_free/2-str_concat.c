@@ -12,6 +12,7 @@ char *str_concat(char *s1, char *s2)
 {
 	char *concat;
 	int len1, len2, i;
+	size_t length = strlen(s1) + strlen(s2) + 1;
 
 	if (s1 == NULL)
 		s1 = "";
@@ -27,7 +28,7 @@ char *str_concat(char *s1, char *s2)
 		len2++;
 
 	/*Allocate memory to the concatenated string*/
-	concat = malloc(sizeof(char) * (len1 + len2 + 1));
+	concat = malloc(sizeof(char) * length);
 
 	if (concat == NULL)
 		return (NULL);
