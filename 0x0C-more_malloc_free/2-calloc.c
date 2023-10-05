@@ -12,20 +12,21 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	unsigned int i;
-	int *ptr;
+	void *ptr;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 
+	i = nmemb * size;
+
 	/* Allocate memory*/
-	ptr = malloc(nmemb * size);
+	ptr = malloc(i);
 
 	if (ptr == NULL)
 		return (NULL);
 
-	/* set memory to zero*/
-	for (i = 0; i < nmemb; i++)
-		ptr[i] = 0;
+	/*initialize memory to 0*/
+	memset(ptr, 0, i);
 
 	return (ptr);
 }
