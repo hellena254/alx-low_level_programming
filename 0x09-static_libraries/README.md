@@ -31,8 +31,9 @@ Replace `file1.c` and `file2.c` with the names of your source code files.
 This command will create the library and add the object files to it. The options rcs stand for "replace," "create," and "index."
 
 2. Verify that the library has been created successfully:
+   
    ```bash
-ar -t libmy.a
+   ar -t libmy.a
 This command will list the contents of the library, which should include the object files.
 
 ## Task 2: Create a Script (create_static_lib.sh)
@@ -51,9 +52,8 @@ To automate the creation of a static library from all the `.c` files in the curr
     # Clean up by removing the temporary object files
     rm -f *.o
 
-Make sure to grant execute permission to the script using the following command:
- ```bash
-   chmod +x create_static_lib.sh
+    # Make sure to grant execute permission to the script using the following command:
+    chmod +x create_static_lib.sh
 
 Now, you can run the script to create the static library `liball.a`:
 
