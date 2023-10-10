@@ -21,4 +21,6 @@ struct dog
  * dog1- typedef for struct dog
  */
 typedef struct dog dog1;
+
+void init_dog(struct dog *d, char *name, float age, char *owner);
 #endif
