@@ -8,13 +8,17 @@
  * @owner: third element
  *
  * Description: a simple struct
-*/
+ */
 
 struct dog
 {
 	char *name;
 	float age;
 	char *owner;
-}
+};
 
+/**
+ * dog1- typedef for struct dog
+ */
+typedef struct dog dog1;
 #endif
