@@ -1,51 +1,85 @@
 #include "variadic_functions.h"
 
 /**
- * print_all- a function that prints anything
+ * print_char- print type char elements
  *
- * @format: is a list of types of arguments passed to the function
+ * @item: va_list passed to function
  */
 
+void print_char(va_list item)
+{
+	int value;
+
+	value = va_arg(item, int);
+	printf("%c", value);
+}
+
+
+/**
+ * print_int - print int type element from va_list
+ * @item: va_list passed to function
+ */
+
+void print_int(va_list item)
+{
+		printf("%d", va_arg(item, int));
+}
+
+
+/**
+ * print_float - print float type element from va_list
+ * @item: va_list passed to function
+ */
+void print_float(va_list item)
+{
+		printf("%f", va_arg(item, double));
+}
+
+/**
+ * print_str - print string element from va_list
+ * @item: va_list passed to function
+ */
+void print_str(va_list item)
+{
+	char *s;
+
+	s = va_arg(item, char *);
+	if (s == NULL)
+		s = "(nil)";
+	printf("%s", s);
+}
+
+/**
+ * print_all - print anything passed if char, int, float, or string.
+ * @format: string of formats to use and print
+ */
 void print_all(const char * const format, ...)
 {
+	unsigned int i, j;
 	va_list args;
-	char *separator = "";
-	int i = 0;
-	char *str;
+	char *sep;
 
+	storage[] = {
+		{ "c", _printchar },
+		{ "f", _printfloat },
+		{ "s", _printstr },
+		{ "i", _printint }
+	};
+
+	i = 0;
+	separator = "";
 	va_start(args, format);
-
-	while (format && format[i])
+	while (format != NULL && format[i / 4] != '\0')
 	{
-		if (i > 0)
-			printf("%s", separator);
-
-		switch (format[i])
+		j = i % 4;
+		if (storage[j].type[0] == format[i / 4])
 		{
-			case 'c':
-				printf("%c", va_arg(args, int));
-				break;
-			case 'i':
-				printf("%d", va_arg(args, int));
-				break;
-			case 'f':
-				printf("%f", va_arg(args, double));
-				break;
-			case 's':
-				str = va_arg(args, char *);
-				if (str == NULL)
-					printf("(nil)");
-				else
-					printf("%s", str);
-				break;
-			default:
-				break;
+			printf("%s", separator);
+			storage[j].f(args);
+			separator = ", ";
 		}
-
-		separator = ", ";
 		i++;
 	}
-
-	va_end(args);
 	printf("\n");
+	va_end(args);
 }
