@@ -13,7 +13,9 @@
 
 void print_opcodes(char *addr, int num_bytes)
 {
-	for (int i = 0; i < num_bytes; i++)
+	int i;
+
+	for (i = 0; i < num_bytes; i++)
 	{
 		printf("%02hhx", addr[i]);
 		if (i < num_bytes - 1)
