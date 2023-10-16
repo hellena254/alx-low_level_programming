@@ -5,7 +5,7 @@
 A structure is a composite data type that groups variables of different data types under a single name. It's used to represent complex data structures like records or objects.
 
 **Declaration**
-```bash
+```c
     struct Point {
     int x;
     int y;
@@ -13,18 +13,18 @@ A structure is a composite data type that groups variables of different data typ
 ```
 
 **Initialization:**
-```
+```c
 struct Point p1 = {1, 2};
 ```
 
 **Accessing members**
-```
+```c
 p1.x = 3;
 p1.y = 4;
 ```
 
 **Nested Structures:** Structures can be nested within other structures, creating hierarchical data structures.
-```
+```c
 struct Address {
     char street[100];
     char city[50];
@@ -40,7 +40,7 @@ struct Person {
 ```
 
 **Arrays of Structures:**
-```
+```c
 struct Student {
     char name[50];
     int roll_number;
@@ -54,7 +54,7 @@ struct Student class[10];
 Typedef is used to define new data types or aliases for existing data types. It improves code readability and portability.
 
 **Declaration**
-```
+```c
 typedef int INT32; // Typedef for int
 typedef struct {
     int x;
@@ -63,7 +63,7 @@ typedef struct {
 ```
 
 **Usage**
-```
+```c
 INT32 num = 42;
 Point p1 = {1, 2};
 ```
