@@ -32,6 +32,8 @@ This repository contains folders, each dedicated to specific topics in C program
 
 **`variadic_functions`** - Covering variadic functions in C.
 
+**`singly_linked_list`** - Covers singly linked list
+
 ## Reading Materials
 - Suggested Reading: [The C Programming Language](https://www.goodreads.com/en/book/show/515601.The_C_Programming_Language)
 - Suggested Reading: [C Programming for the Absolute Beginner](https://www.goodreads.com/en/book/show/414507.C_Programming_for_the_Absolute_Beginner)
