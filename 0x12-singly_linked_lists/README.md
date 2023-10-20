@@ -1,5 +1,3 @@
-Certainly, here's a concise explanation of how a singly linked list is used in a README:
-
 # Singly Linked List in C
 
 A singly linked list is a fundamental data structure used in programming to organize and manage a collection of elements, where each element, or "node," consists of two parts:
@@ -51,8 +49,6 @@ When working with singly linked lists, it's essential to manage memory properly 
 
 2. [C Programming - Advanced Data Structures](https://www.tutorialspoint.com/data_structures_algorithms/index.htm): You can explore more about various data structures, including linked lists, in this advanced data structures section.
 
-3. [Singly Linked List](https://www.geeksforgeeks.org/data-structures/linked-list/): GeeksforGeeks offers a comprehensive collection of articles and tutorials on singly linked lists, covering basic operations, advanced topics, and code examples.
+3. [C Program to Implement Singly Linked List](https://www.geeksforgeeks.org/c-program-for-singly-linked-list/): This article provides a step-by-step explanation and example code for implementing a singly linked list in C.
 
-4. [C Program to Implement Singly Linked List](https://www.geeksforgeeks.org/c-program-for-singly-linked-list/): This article provides a step-by-step explanation and example code for implementing a singly linked list in C.
-
-:) happy coding!
+*:) happy coding!*
