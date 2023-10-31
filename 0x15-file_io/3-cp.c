@@ -52,7 +52,7 @@ int main(int ac, char **av)
 	}
 
 	if (bytes_read == -1)
-		error_exit(98, "Error: Can't read from file %s\n", av[1);
+		error_exit(98, "Error: Can't read from file %s\n", av[1]);
 
 	if (close(from_fd) == -1)
 		error_exit(100, "Error: Can't close fd %d\n", from_fd);
